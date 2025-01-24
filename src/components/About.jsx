@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className='w-16 h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[23px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -40,18 +40,19 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a current student studying computer science at the University of
+        Michigan. I have experience in languages such as C++, Python, JavaScript,
+        and more. I also have experience with tools like React, Node.js, Flask,
+        and more. I am passionate about areas such as full-stack development and 
+        machine learning. I am always looking for new opportunities to learn and 
+        grow as a developer. Check out the rest of the site to learn more about me!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

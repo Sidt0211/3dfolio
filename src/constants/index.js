@@ -1,3 +1,4 @@
+import { s } from "maath/dist/misc-7d870b3c.esm";
 import {
   mobile,
   backend,
@@ -15,6 +16,18 @@ import {
   git,
   figma,
   docker,
+  me,
+  nba,
+  yt,
+  piazza,
+  c,
+  gc, 
+  cpp,
+  python,
+  sql,
+  claws,
+  sylvan,
+  rx,
   meta,
   starbucks,
   tesla,
@@ -31,8 +44,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
   },
   {
     id: "contact",
@@ -42,19 +55,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Data Structures & Algorithms",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Web Systems",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Computer Organization",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Discrete Mathematics",
     icon: creator,
   },
 ];
@@ -81,32 +94,32 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "SQL",
+    icon: sql,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Google Cloud",
+    icon: gc,
   },
   {
     name: "docker",
@@ -116,55 +129,38 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer",
+    company_name: "CLAWS Project Team",
+    icon: claws,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Spearheaded the development of an Augmented Reality interface, increasing astronaut autonomy and operational efficiency by 35% through advanced real-time data visualizations and reduced system initialization time by 50% for active astronauts.",
+      "Engineered a Mission Control Center Dashboard using HoloLens’ AR capabilities, cutting communication latency between active astronauts and mission control by 20% and while delivering real-time, in-depth statistics for monitoring.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Software and Hardware Engineering Intern",
+    company_name: "Rx Express Pharmacy",
+    icon: rx,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 2024 - August 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Integrated APIs to streamline real-time inventory management, automating supplier availability checks, reducing manual reordering tasks by 50%, and improving ordering efficiency by 25% through price comparisons across major retailers.",
+      "Enhanced the prescription fulfillment process by successfully implementing automation tools that streamlined data entry and reduced manual steps, cutting processing time by 20% and increasing overall workflow efficiency by 15%.",
+      "Assembled and upgraded seven computer systems, including building PCs and configuring setups for pharmaceutical services.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Software Engineering Intern",
+    company_name: "Sylvan Learning Center",
+    icon: sylvan,
+    iconBg: "#383E56",
+    date: "May 2023 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Using tools like HTML, CSS, and JavaScript, incorporated schedules, events, and current offerings on branch’s website.",
+      "Implemented new marketing strategies on the website, resulting in a 20% increase in traffic, as measured by user clicks.",
+      "Optimized filing system for student data, learning materials, and payroll, while increasing efficiency and speed by almost 2x.",
     ],
   },
 ];
@@ -198,67 +194,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "NBA Games Predictor",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Used a web-scraping algorithm with BeautifulSoup to collect over 17,000 NBA game stats and designed a machine learning model using scikit-learn’s Ridge Classifier to achieve 66% prediction accuracy.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "BeautifulSoup",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Sycikit-learn",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: nba,
+    source_code_link: "https://github.com/sidt0211/",
   },
   {
-    name: "Job IT",
+    name: "Youtube Clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built a full-stack web application for video uploads and streaming, integrating Google Cloud Services to optimize storage and communication. Created a responsive user interface where people can stream and interact with videos.",
     tags: [
       {
-        name: "react",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Next.js",
         color: "pink-text-gradient",
       },
+      {
+        name: "Express.js",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Google Cloud",
+        color: "orange-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: yt,
+    source_code_link: "https://github.com/sidt0211/",
   },
   {
-    name: "Trip Guide",
+    name: "Piazza Post Classifier",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed an ML-powered classifier using Natural Language Processing techniques for categorizing Piazza posts. Achieved 90% accuracy on large datasets with efficient prediction times under 15 seconds, leveraging advanced text pre-processing and probabilistic modeling.",
     tags: [
       {
-        name: "nextjs",
+        name: "C++",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Natural Language Processing",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: piazza,
+    source_code_link: "https://github.com/sidt0211",
   },
 ];
 

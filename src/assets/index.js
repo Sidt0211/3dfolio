@@ -6,6 +6,11 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import me from "./me.png"
+import nba from "./nba.png"
+import yt from "./yt-clone.png"
+import piazza from "./piazza.png"
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,11 +25,21 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import c from "./tech/c.png"
+import cpp from "./tech/cpp.png"
+import python from "./tech/python.png"
+import sql from "./tech/sql.png"
+import gc from "./tech/gc.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import claws from "./company/CLAWS.png";
+import rx from "./company/rx.png";
+import sylvan from "./company/sylvan.png";
+
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -39,12 +54,24 @@ export {
   github,
   menu,
   close,
+  claws,
+  rx,
+  sylvan,
+  me, 
+  nba, 
+  yt, 
+  piazza,
   css,
   docker,
   figma,
   git,
   html,
   javascript,
+  c,
+  cpp,
+  python,
+  sql,
+  gc, 
   mongodb,
   nodejs,
   reactjs,
