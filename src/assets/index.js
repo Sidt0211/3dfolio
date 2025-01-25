@@ -9,6 +9,7 @@ import close from "./close.svg";
 import me from "./me.png"
 import nba from "./nba.png"
 import yt from "./yt-clone.png"
+import me_new from "./me_new.png"
 import piazza from "./piazza.png"
 
 
@@ -41,6 +42,7 @@ import sylvan from "./company/sylvan.png";
 
 
 
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -65,6 +67,7 @@ export {
   docker,
   figma,
   git,
+  me_new,
   html,
   javascript,
   c,
