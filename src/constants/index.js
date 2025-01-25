@@ -239,6 +239,10 @@ const projects = [
         name: "Google Cloud",
         color: "orange-text-gradient",
       },
+      {
+        name: "Docker",
+        color: "blue-text-gradient",
+      },
     ],
     image: yt,
     source_code_link: "https://github.com/sidt0211/",

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Modal from './Modal';
 
 
 const Contact = () => {
@@ -17,6 +18,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -32,24 +35,37 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // First email - to you
     emailjs
       .send(
         'service_s9oynml',
         'template_tur2y3h',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Sid",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "siddharthathottempudi@email.com",
           message: form.message,
         },
         'wfoWPF8QvVbGkuZ7D'
       )
       .then(
         () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          // Second email - confirmation to sender
+          emailjs.send(
+            'service_s9oynml',
+            'template_et6xckk', 
+            {
+              to_name: form.name,
+              to_email: form.email,
+              message: "Thank you for reaching out! I have received your message and will get back to you as soon as possible.",
+            },
+            'wfoWPF8QvVbGkuZ7D'
+          );
 
+          setLoading(false);
+          setIsSuccess(true);
+          setIsModalOpen(true);
           setForm({
             name: "",
             email: "",
@@ -59,10 +75,14 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          setIsSuccess(false);
+          setIsModalOpen(true);
         }
       );
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -130,6 +150,12 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={closeModal} 
+        success={isSuccess}
+      />
     </div>
   );
 };
