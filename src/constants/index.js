@@ -9,6 +9,7 @@ import {
   html,
   css,
   reactjs,
+  scale,
   redux,
   tailwind,
   nodejs,
@@ -128,6 +129,18 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Technical Advisor Intern",
+    company_name: "Scale AI",
+    icon: scale,
+    iconBg: "#383E56",
+    date: "January 2025 - Present",
+    points: [
+      "Developed and optimized multimodal LLMs to solve Olympiad-level mathematics and programming problems.",
+      "Mitigated AI failure modes thorugh adversarial test cases, reducing error rates by 36% on complex reasoning tasks.",
+    ],
+  },
+
   {
     title: "Software Developer",
     company_name: "CLAWS Project Team",

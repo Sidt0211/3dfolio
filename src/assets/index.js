@@ -13,6 +13,7 @@ import me_new from "./me_new.png"
 import piazza from "./piazza.png"
 
 
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -39,7 +40,7 @@ import tesla from "./company/tesla.png";
 import claws from "./company/CLAWS.png";
 import rx from "./company/rx.png";
 import sylvan from "./company/sylvan.png";
-
+import scale from "./scale.png";
 
 
 
@@ -52,6 +53,7 @@ export {
   backend,
   creator,
   mobile,
+  scale,
   web,
   github,
   menu,
