@@ -41,6 +41,7 @@ import claws from "./company/CLAWS.png";
 import rx from "./company/rx.png";
 import sylvan from "./company/sylvan.png";
 import scale from "./scale.png";
+import aws from "./company/aws.png";
 
 
 
@@ -56,6 +57,7 @@ export {
   scale,
   web,
   github,
+  aws,
   menu,
   close,
   claws,

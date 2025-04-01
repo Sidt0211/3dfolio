@@ -5,6 +5,7 @@ import {
   creator,
   web,
   javascript,
+  aws,
   typescript,
   html,
   css,
@@ -129,6 +130,17 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: " Incoming Software Development Engineering Intern",
+    company_name: "Amazon",
+    icon: aws,
+    iconBg: "#383E56",
+    date: "May 2025",
+    points: [
+      "Incoming 2025 Summer Intern on AWS Subteam - Elastic Load Balancing",
+    ],
+  },
+
   {
     title: "Technical Advisor Intern",
     company_name: "Scale AI",
